@@ -37,7 +37,7 @@ Blossom’s cloud went away, but the hardware still works. **SprinklerFreedom** 
 
 ```bash
 # 1) Clone
-git clone https://github.com/<your-username>/SprinklerFreedom.git
+git clone https://github.com/natecus/SprinklerFreedom.git
 cd SprinklerFreedom
 
 # 2) (Optional) Create a venv
