@@ -49,3 +49,11 @@ pip install -r requirements.txt
 
 # 4) Run
 python SprinklerFreedomv2.py --host 0.0.0.0 --port 5000
+```
+## Test it Out
+- Open a browser to: http://<your-pi-or-pc-ip>:5000/
+- On the Welcome/Settings tab:
+  - Set your Blossom IP (use Auto-discover if you’re not sure).
+  - (Optional) Turn on Weather skip and adjust threshold.
+  - (Optional) Enable Use Master and set Master Valve # (default 13).
+  - Use the Manual tab to test a zone, then the Schedule tab to automate.
