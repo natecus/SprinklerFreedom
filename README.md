@@ -1,8 +1,8 @@
 # SprinklerFreedom
 
-Local, minutes-based web UI to keep your **Blossom sprinkler controller** useful — with optional weather-skip and a friendly weekly scheduler. Runs on a Raspberry Pi (or any Linux/Windows/macOS machine) and talks to your Blossom over your LAN. Save hardware from the landfill ♻️
+Local, minutes-based web UI to keep your **Blossom 8 WiFi sprinkler controller** useful — with optional weather-skip and a friendly weekly scheduler. Runs on a Raspberry Pi (or any Linux/Windows/macOS machine) and talks to your Blossom over your LAN. Save hardware from the landfill ♻️
 
-👉 [Buy me a coffee](https://buymeacoffee.com/natecus)
+**Is this project useful?** Maybe you could [Buy me a coffee](https://buymeacoffee.com/natecus)
 
 ---
 
@@ -51,9 +51,24 @@ pip install -r requirements.txt
 python SprinklerFreedomv2.py --host 0.0.0.0 --port 5000
 ```
 ## Test it Out
-- Open a browser to: http://<your-pi-or-pc-ip>:5000/
+- Open a browser to: http://*your-pi-or-pc-ip*:5000/
 - On the Welcome/Settings tab:
   - Set your Blossom IP (use Auto-discover if you’re not sure).
   - (Optional) Turn on Weather skip and adjust threshold.
   - (Optional) Enable Use Master and set Master Valve # (default 13).
   - Use the Manual tab to test a zone, then the Schedule tab to automate.
+
+---
+## Caveats & Limitations
+
+- **Always-on requirement**: The app must be running for schedules to trigger.  
+  - If you run this on a **PC**, that PC must stay on.  
+  - If you run it on a **Raspberry Pi**, the Pi must stay powered and connected to your network.
+
+- **LAN-only**: SprinklerFreedom is designed for **local network use only**. Do not expose it directly to the internet. If you want remote access, use a VPN like Tailscale or WireGuard.
+
+- **Weather skip is “fail-open”**: If weather data is unavailable, the system will **still water** to avoid skipping schedules unnecessarily.
+
+- **Single Blossom device**: Currently supports only one Blossom controller at a time. Multi-device support is a future roadmap item.
+
+- **Manual testing recommended**: After first setup, use the **Manual** tab to test each zone before relying on schedules.
