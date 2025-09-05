@@ -1,6 +1,6 @@
 # SprinklerFreedom
 
-Local, minutes-based web UI to keep your **Blossom 8 WiFi sprinkler controller** useful — with optional weather-skip and a friendly weekly scheduler. Runs on a Raspberry Pi (or any Linux/Windows/macOS machine) and talks to your Blossom over your LAN. Save hardware from the landfill ♻️
+Local, minutes-based web UI to keep your **Blossom 8 WiFi sprinkler controller** useful — with optional weather-skip and a friendly weekly scheduler. Runs on a Raspberry Pi (or any Linux/Windows/macOS machine) and talks to your Blossom over your LAN. Save hardware from the landfill 
 
 **Is this project useful?** Maybe you could [Buy me a coffee](https://buymeacoffee.com/natecus)
 
