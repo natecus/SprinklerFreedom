@@ -33,6 +33,36 @@ Blossom’s cloud went away, but the hardware still works. **SprinklerFreedom** 
 
 ---
 
+## Initial Setup of Blossom Controller
+
+# Initial Setup Guide: Unlocking and Connecting the Blossom 8
+
+The Blossom 8 sprinkler controller was originally tied to a discontinued cloud app. Instead of tossing it, we figured out how to get it online locally and control it ourselves. Here’s the step-by-step:
+
+### 1. Power up the Blossom
+- Plug in the Blossom 8.  
+- After a minute, it broadcasts a Wi-Fi setup network.
+
+### 2. Connect to the Blossom’s setup Wi-Fi
+- On your phone or pc (it works best on pc), look for an SSID named **Blossom_XXXX** (the last digits vary by device).  
+- Connect to that network using the default password: 12flowers
+
+### 3. Configure your home Wi-Fi
+- Once connected, use ipconfig to find your default gateway, this will be the IP of the Blossom
+  - On mine it was `http://192.168.4.1` but I don't know if that is default.  
+- Pick your home Wi-Fi network (SSID) from the list.  
+- Enter your home Wi-Fi password.  
+- Save settings. The Blossom will reboot and join your home Wi-Fi.  
+
+### 4. Find the Blossom on your LAN
+Now the Blossom is part of your home network. To get its IP address:  
+
+1. **Check your router’s device list** – it usually shows up as “Blossom.”  
+2. **Use SprinklerFreedom’s “Auto-Discover” button** – it scans your subnet for devices serving `/bloom.js`.  
+3. **Use a network scan tool** (e.g. `nmap` or Fing).  
+
+---
+
 ## Quick Start (any OS)
 
 ```bash
