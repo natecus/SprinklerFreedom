@@ -35,8 +35,6 @@ Blossom’s cloud went away, but the hardware still works. **SprinklerFreedom** 
 
 ## Initial Setup of Blossom Controller
 
-# Initial Setup Guide: Unlocking and Connecting the Blossom 8
-
 The Blossom 8 sprinkler controller was originally tied to a discontinued cloud app. Instead of tossing it, we figured out how to get it online locally and control it ourselves. Here’s the step-by-step:
 
 ### 1. Power up the Blossom
